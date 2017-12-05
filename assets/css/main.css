@@ -1,1 +1,44 @@
-/* Los estilos de tu proyecto */
+/* NAVBAR */
+.navbar{
+	margin-bottom: 0;
+}
+.navbar-brand{
+	padding-left: 50%;
+	padding-top: 16%;
+}
+.navbar-right{
+	padding-right: 10%;
+}
+li{
+	padding-top: 8%;
+	padding-bottom: 8%; 
+}
+/* IMAGEN HEADER */
+#headerImage{
+	background-image: url(../images/taxi.jpg);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	background-position: bottom;
+	height: 600px;
+}
+/* Primera sección*/
+.first{
+	background-color: #F3C600;
+}
+/* Segunda sección*/
+.second{
+	background-image: url(../images/conduce.jpg);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	background-position: bottom;
+	height: 600px;	
+}
+.third{
+	background-color: #F3C600;
+}
+footer{
+	background-color: #2F2F2F;
+}
+
