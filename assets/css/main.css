@@ -61,9 +61,28 @@ li{
 	background-position: bottom;
 	height: 600px;	
 }
-.third{
-	background-color: #F3C600;
+.conduceBox{
+	background-color: rgba(0,0,0,0.5);
+	height: 600px;
+	color: #FFF;
+	padding-left: 60px;
+	padding-top: 200px;
 }
+#conduce{
+	background-color: #F3C600;
+
+}
+.third{
+	color: #FFF;
+	background-color: #F3C600;
+	padding-top: 5em;
+	padding-bottom: 5em;
+	padding-left: 10em;
+}
+.theInput{
+	padding-left: 5em;
+}
+
 /* FOOTER */
 footer{
 	background-color: #2F2F2F;
