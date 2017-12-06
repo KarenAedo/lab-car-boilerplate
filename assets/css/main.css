@@ -27,9 +27,30 @@ li{
 	background-position: bottom;
 	height: 600px;
 }
-/* Primera sección*/
+.headerSmallBox{
+	background-color: #F3C600;
+	color: #FFF;
+	margin-top: 12em;
+	padding: 2em;
+}
+.imgSmallBox{
+	width: 20%;
+	padding-left: 0.5em;
+}
+/* Primera sección CELULAR */
 .first{
 	background-color: #F3C600;
+}
+.celularBox{
+	border-top: 0.1em solid #FFF;
+	border-right: 0.1em solid #FFF;
+	border-bottom: 0.1em solid #FFF;
+	color: #FFF;
+	margin-top: 4em;
+	margin-bottom: 4em;
+	padding-top: 4em;
+	padding-bottom: 4em;
+	padding-left: 4em;
 }
 /* Segunda sección*/
 .second{
