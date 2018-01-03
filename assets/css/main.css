@@ -164,6 +164,8 @@ input[type="text"]::-webkit-input-placeholder{
 /* FOOTER */
 footer{
 	background-color: #2F2F2F;
+}
+.containerFooter{
 	padding-right: 8em;
 	padding-left: 8em;
 }
@@ -198,7 +200,19 @@ footer{
 	padding-top: 1em;
 	padding-bottom: 4em;
 }
-.copyright-xs{
-	color: #FFF;
+/* FOOTER MOVILE*/
+.logoFooterMovil{
+	padding: 1em 0 1em 1em;
+}
+.whiteLineMovil{
 	border-top: 0.1em solid #FFF;
+	border-bottom: 0.1em solid #FFF;
+	color: #fff;
+}
+.iconosMovil{
+	padding-top: 1em;
+}
+.imgMovil{
+	padding-top: 1em;
+	padding-bottom: 1em;
 }
