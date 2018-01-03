@@ -2,22 +2,39 @@
 	margin:  0;
 	padding: 0;
 }
+.row-clear{
+	margin: 0;
+}
 
 /* NAVBAR */
-.navbar{
-	margin-bottom: 0;
+.nav-lab{
+	padding: 1em;
+	border:none;
+	margin:0;
 }
-.navbar-brand{
-	padding-left:;
-	padding-top:;
+.navbar-default .nav-lab > li > a {
+  color: #000;
 }
-.navbar-right{
-	padding-right:;
+.navbar-default .nav-lab > li > a:hover,
+.navbar-default .nav-lab > li > a:focus {
+  color: #ffc107;
 }
-li{
-	padding-top:;
-	padding-bottom:; 
+.navbar-logo{
+	padding-top: 1em;
 }
+
+/* MODAL */
+.loginmodal-container {
+  padding: 1.8em;
+  max-width: 22em;
+  width: 100% !important;
+  background-color: #F7F7F7;
+  margin: 0 auto;
+  border-radius: .2em;
+  box-shadow: 0 .2em .2em rgba(0, 0, 0, 0.3);
+  overflow: hidden;
+}
+
 /* IMAGEN HEADER */
 #headerImage{
 	background-image: url(../images/taxi.jpg);
@@ -25,32 +42,84 @@ li{
 	background-position: center;
 	background-size: cover;
 	background-position: bottom;
-	height: 600px;
+	height: 800px;
 }
 .headerSmallBox{
 	background-color: #F3C600;
 	color: #FFF;
-	margin-top: 12em;
-	padding: 2em;
+	margin-top: 15em;
+	padding: 3em;
+	font-weight: bold;
 }
-.imgSmallBox{
-	width: 20%;
+h2{
+	font-size: 2.5em;
+	margin: 0;
+}
+h4{
+	font-size: 2em;
+	padding-top: 0.5em;
+}
+.btn-box{
+	color:#000;
+	background-color: #FFF;
+	padding:0.8em;
+	border:none;
+	margin: 1em 0;
+}
+.before-after-whiteLines:before{
+	content: '';
+	width: 30%;
+    border-bottom: solid 1px #fff;
+    position: absolute;
+    bottom: 9.2em;
+    left: 3em;
+}
+.before-after-whiteLines:after{
+	content: '';
+	width: 30%;
+    border-bottom: solid 1px #fff;
+    position: absolute;
+    bottom: 9.2em;
+    right: 3em;
+}
+.imgSmallBox1{
+	height: 0.8em;
 	padding-left: 0.5em;
 }
-/* Primera sección CELULAR */
-.first{
+.imgSmallBox2{
+	height: 0.8em;
+}
+
+/* PRIMERA SECCION / CELULAR */
+.celular{
 	background-color: #F3C600;
 }
 .celularBox{
-	border-top: 0.1em solid #FFF;
-	border-right: 0.1em solid #FFF;
-	border-bottom: 0.1em solid #FFF;
 	color: #FFF;
-	margin-top: 4em;
-	margin-bottom: 4em;
-	padding-top: 4em;
-	padding-bottom: 4em;
-	padding-left: 4em;
+	margin: 4em 0 4em 0;
+	padding: 4em 0 4em 4em;
+}
+.bordeBlanco{
+	outline:1px solid #FFF;
+	padding: 2em;
+}
+.newApp{
+	padding-bottom: 2em;
+}
+.mover{
+	padding-left: 5em;
+}
+.descarga{
+	padding-top: 3.5em;
+}
+.descarga p{
+	font-size: 1.3em;
+	margin-top: 1.5em;
+}
+.llegaRapido{
+	color: #fff;
+	font-size: 1.2em;
+	margin: 0 0 1.5em 0;
 }
 /* Segunda sección*/
 .second{
@@ -64,23 +133,32 @@ li{
 .conduceBox{
 	background-color: rgba(0,0,0,0.5);
 	height: 600px;
-	color: #FFF;
+	color: #fff;
 	padding-left: 60px;
 	padding-top: 200px;
 }
-#conduce{
-	background-color: #F3C600;
+btnConducir{
+	background-color: #f3C600;
 
 }
+/* Segunda sección*/
 .third{
-	color: #FFF;
+	color: #fff;
 	background-color: #F3C600;
-	padding-top: 5em;
-	padding-bottom: 5em;
-	padding-left: 10em;
+	padding: 5%
 }
-.theInput{
-	padding-left: 5em;
+.form-group input[type="text"]{
+  background:none;
+  border: 1px solid #fff;
+  width: 70%;
+  display: inline-block;
+  color: #fff;
+}
+input[type="text"]::-webkit-input-placeholder{
+  color: #fff;
+}
+#boton{
+	text-align: center;
 }
 
 /* FOOTER */
@@ -90,9 +168,13 @@ footer{
 	padding-left: 8em;
 }
 .logoFooter{
-	border-bottom: 0.1em solid #FFF;
+
 	padding-bottom: 1em;
 	padding-top: 4em;
+}
+.whiteLine{
+	border-top: 0.1em solid #FFF;
+	border-bottom: 0.1em solid #FFF;	
 }
 .listas{
 	padding-top: 1em;
@@ -113,8 +195,10 @@ footer{
 }
 .copyright{
 	color: #FFF;
-	border-top: 0.1em solid #FFF;
 	padding-top: 1em;
 	padding-bottom: 4em;
 }
-
+.copyright-xs{
+	color: #FFF;
+	border-top: 0.1em solid #FFF;
+}

@@ -11,128 +11,158 @@
 	<link rel="stylesheet" href="assets/css/main.css">
 </head>
 <body>
-	<!-- container -->
-	<div>
+	
 	<!-- NAVBAR -->
-		<nav class="navbar navbar-default">
-  		<div class="container-fluid">
-    		<div class="navbar-header">
-					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-1">
-						<span class="sr-only"></span>
-						<span class="icon-bar"></span>
-						<span class="icon-bar"></span>
-						<span class="icon-bar"></span>
-					</button>
-					<a href="#" class="navbar-brand"><img src="assets/images/logoForma.png" alt="#" class="imgLogo"></a>
-    		</div>
-    		<div class="collapse navbar-collapse" id="navbar-1">
-    			<ul class="nav navbar-nav navbar-right">
-    				<li><a href="">Viaja</a></li>
-    				<li><a href="">Conduce</a></li>
-    				<li><a href="">Inicia sesión</a></li>	
-    			</ul>
-    		</div>
-  		</div>
-		</nav>
-		<!-- header -->
-		<header id="headerImage">
-			<div class="container-fluid">
-				<div class="row">
-					<div class="col-12">
-			<!-- form -->	
-						<div class="hidden-xs col-md-5 col-xs-offset-2 col-xs-10 col-sm-offset-6 col-md-offset-7 headerSmallBox">
-							<h2><strong>Disfruta el viaje <br> Eres dueño de tu tiempo</strong></h2>
-							<h3>Viaja con<img src="assets/images/logoBlanco.png" alt="#" class="imgSmallBox"></h3>
-							<button class="btn btn-default">Regístrate</button>
-            	<p>o bien</p>
-            	<button class="btn btn-default">Conviértete en un conductor</button>						
-						</div>
-       <!-- en pantalla xs (cambia el contenido)-->
-            <div class="hidden-lg hidden-md col-xs-offset-2 col-xs-10 headerSmallBox">
-                <h3>Comienza a viajar<br> con lab< ar</h3>
-                <p><a class="btn btn-primary btn-lg" href="#" role="button"><strong>Descarga la app</strong></a></p>
-            </div>
+	<nav class="navbar navbar-default navbar-fixed-top nav-lab"><!--nav-lab/class para estilos css-->
+	  <div class="container">
+      <div class="row">
+  	    <div class="col-xs-12">
+         
+          <!-- nav mobile -->
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a href="#" ><img src="assets/images/logoForma.png" alt="Logo" class="navbar-logo"></a>
+          </div>
 
-					</div>
-				</div>
-			</div>
-		</header>
+          <!-- nav desktop -->
+          <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right nav-lab">
+              <li><a href="#">Viaja</a></li>
+              <li><a href="#">Conduce</a></li>
+        	
+        	<!--AQUÍ VA UN MODAL -->
+              <li><a href="#" data-toggle="modal" data-target="#login-modal"">Inicia Sesión</a></li>
+          
+          <!--AQUÍ VAN LAS CARACTERÍSTICAS DEL MODAL -->  
+          		<div class="modal fade" id="login-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" style="display: none;">
+                <div class="modal-dialog">
+                  <div class="loginmodal-container">
+                    <h1>Iniciar Sesión</h1><br>
+                    <form>
+                      <input type="text" name="user" placeholder="Username">
+                      <input type="password" name="pass" placeholder="Password">
+                      <input type="submit" name="login" class="login loginmodal-submit" value="Login">
+                    </form>
+                      <div class="login-help">
+                        <a href="#">Register</a> - <a href="#">Forgot Password</a>
+                      </div>
+                  </div>
+                </div>
+              </div> <!--AQUÍ TERMINA EL MODAL -->  
+            
+            </ul>
+          </div><!--navbar-collapse-->
+        </div><!--col-xs-12-->
+      </div><!--row-->
+	  </div><!--container-->
+	</nav>
 
-		<!-- section 1 celular-->
-		<section class="first">
+	<!-- HEADER -->
+	<header id="headerImage">
+		<div class="container-fluid">
 			<div class="row">
-				<div class=" col-xs-12 col-sm-10 col-md-10 celularBox">
+			<!--caja amarilla-->	
+				<div class="col-xs-10 col-xs-offset-2 col-sm-7 col-sm-offset-5 col-md-5 col-md-offset-7 col-lg-5 col-lg-offset-7 headerSmallBox"><!--headerSmallBox/class para estilos css -->
+					
+					<div class="hidden-xs"><!--no se verá en xs-->
+						<h2><strong>Disfruta el viaje <br> Eres dueño de tu tiempo</strong></h2>
+						<h4>Viaja con<img src="assets/images/logoBlanco.png" alt="#" class="imgSmallBox1"></h4>
+						<button class="btn btn-default btn-box">Regístrate</button>
+          	<p class="before-after-whiteLines text-center">o bien</p><!--líneas-->
+          	<button class="btn btn-default btn-box">Conviértete en un conductor</button>						
+					</div><!--hidden-xs-->
+					
+					<!-- en pantalla xs (cambia el contenido)-->
+					<div class="hidden-sm hidden-md hidden-lg">
+						<h2><strong>Comienza a viajar</strong><br><strong>con</strong><img src="assets/images/logoBlanco.png" alt="#" class="imgSmallBox2"></h2>
+						<button class="btn btn-default btn-box" type="submit">Descarga el APP</button>
+					</div>
+				
+				</div><!--col general-->
+			</div><!--row-->
+		</div><!--container-fluid-->
+	</header>
+
+	<!-- SECCION 1 CELULAR-->
+		<section class="celular">
+			<div class="row row-clear">
+				<div class="col-xs-10 col-sx-offset-1 col-sm-10 col-md-10 col-lg-10 celularBox bordeBlanco">
 					<div class="row">
-						<div class="col-md-offset-1 col-md-5">
-						  <h3 class="visible-xs hidden-sm text-center">La nueva app</h3>
-						  <img id="cel" src="assets/images/iPhone6Plus.png" alt="phone">
+						<div class="col-sm-6 col-md-6 col-lg-6 mover">
+						  <h3 class="visible-xs text-center newApp"><strong>La nueva app</strong></h3>
+						  <img id="cel" class="img-responsive" src="assets/images/iPhone6Plus.png" alt="#">
 						</div>
-					  <div class="hidden-xs hidden-sm visible-md visible-lg col-md-4">
-							<h3>Descarga la nueva app</h3>
+					  
+					  <div class="hidden-xs col-sm-5 col-md-5 col-lg-5 descarga">
+							<h2><strong>Descarga la nueva app</strong></h2>
 							<p>La versión actualizada de LabCar está llena de nuevas funciones para llegar a donde quieras aún más facil y rápido</p>
-							<p class="hidden-xs hidden-sm visible-md visible-lg">Con solo tocar un botón, un auto llega justo a tu ubicación. Súbete y no te preocupes: tu conductor sabe exactamente a dónde ir</p>
+							<p>Con solo tocar un botón, un auto llega justo a tu ubicación. Súbete y no te preocupes: tu conductor sabe exactamente a dónde ir</p>
 						</div>
 					</div> 
-				</div>
-    	</div>
+				</div><!--col general-->
+    	</div><!--row-->
+			
 			<!-- Se cambia el texto solo en responsive xs -->
-			<div class="row visible-xs hidden-sm text-center">
-				<div class="col-sx-offset-1 col-sx-11">
-					<h5 class="text-left">Llega a tu destino aún mas rapido</h5>
+			<div class="row visible-xs text-center">
+				<div class="col-sx-12">
+					<p class="text-center llegaRapido"><strong>Llega a tu destino aún mas rapido</strong></p>
 				</div>
 			</div>
-		</section>
+		</section><!-- SECCION 1 CELULAR-->
+
 
 		<!-- section 2-->
 		<section class="second">
 			<div class="container-fluid">
 				<div class="row">
 					<div class="col-md-offset-8 col-md-4 conduceBox">
-						<h3>Conduce cuando quieras</h3>
+						<h3><strong>Conduce cuando quieras</strong></h3>
 			  		<p>LabCar es una opción flexible para alcanzar tus metas financieras</p>
-			  		<button type="button" id="conduce" class="btn btn-default btnConducir">Conviertete en un conductor</button>
+			  		<button class="btn btn-warning" id="conduce"><strong>Conviertete en un conductor</strong></button>
 					</div>
 				</div>
 			</div>
 		</section>
 		
-		<!-- section 3 MAPA -->
+		<!-- section 3 TARIFA MAPA -->
 		<section class="third">
 			<div class="container-fluid">
 				<div class="row">
-					
-					<div class="col-sm-4 col-xs-12 theInput">
+					<div class="col-lg-6 col-md-6 theInput">
 						<h3>Tarifas</h3>
             <p>Consultas las tarifas Lab-car aqui</p>
+						<form class="form-horizontal">
+            	<div class="form-group">
+								<label for="punto-Partida" class="glyphicon glyphicon-record"></label>
+								<input type="text" class="form-control" placeholder="Ingrese su punto de partida..." aria-describedby="sizing-addon3">  
+            	</div>
 
-            <div class="input-group input-group-sm">
-              <span class="input-group-addon" id="sizing-addon3"><img src="assets/images/shape.png" alt="#"></span>
-              <input type="text" class="form-control" placeholder="Ingrese su punto de partida..." aria-describedby="sizing-addon3">  
-            </div>
-
-            <div class="input-group input-group-sm">
-            	<span class="input-group-addon" id="sizing-addon3"><img src="assets/images/shape2.png" alt=""></span>
-              <input type="text" class="form-control" placeholder="Ingrese su destino..." aria-describedby="sizing-addon3">
-            </div>
-            <p class="text-center">          
-              <button id="boton">Trazar ruta!!</button>        
-            </p>
-					</div>
-
- 					<div class="col-sm-4 hidden-xs col-lg-4">
+            	<div class="form-group">
+            		<label for="punto-Destino" class="glyphicon glyphicon-send"></label>
+              	<input id="punto-Destino" type="text" class="form-control" placeholder="Ingrese su destino...">
+            	</div>
+            	
+            	<div class="form-group" id="boton">
+            		<button type="submit" class="btn btn-default col-md-offset-3">Trazar ruta!!</button>
+							</div>
+						</form>
+					</div> 					
+ 					<div class="col-lg-6 col-md-6 hidden-xs hidden-sm">
  						<iframe src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d51326401.1943384!2d-68.44216275239842!3d-19.633055474497635!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses-419!2scl!4v1512481398703" width="400" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
  					</div>
-				</div>
+					<div class="col-xs-6 hidden-lg hidden-md">
+ 						<iframe src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d51326401.1943384!2d-68.44216275239842!3d-19.633055474497635!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses-419!2scl!4v1512481398703" width="250" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
+ 					</div
 				
-				<div class="row">
-					<div class="hidden-lg hidden-md hidden-sm visible-xs-12">
-           	<iframe src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d51326401.1943384!2d-68.44216275239842!3d-19.633055474497635!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses-419!2scl!4v1512481398703" width="400" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
-          </div>
-				</div>			
-			</div>
+			</div><!--container-fluid-->
 		</section>
 		
-		<!-- footer -->
+		<!--FOOTER-->
 		<footer>
 			<div class="container-fluid containerFooter">
 				
@@ -142,11 +172,11 @@
 					</div>
 				</div>
 
-				<div class="row">
+				<div class="row whiteLine">
 					<div class="col-lg-12 listas">
 
 						<div class="row">
-							<div class="hidden-xs col-sm-3 col-lg-3 iconos">
+							<div class="hidden-xs col-lg-3 iconos">
 								<i class="fa fa-facebook" aria-hidden="true"></i>
 								<i class="fa fa-twitter" aria-hidden="true"></i>
 								<i class="fa fa-linkedin" aria-hidden="true"></i>
@@ -154,7 +184,7 @@
 								<i class="fa fa-play" aria-hidden="true"></i>
 							</div>
 						
-							<div class="col-sm-3 col-xs-6 col-lg-3 lista">
+							<div class="col-xs-6 col-lg-3 lista">
 								<h6>Viaja</h6>
 								<h6>Conduce</h6>
 								<h6>Ciudades</h6>
@@ -165,7 +195,7 @@
 								<h6>Seguridad</h6>
 							</div>
 						
-							<div class="visible-lg col-sm-3 hidden-xs col-lg-3 lista">
+							<div class="hidden-xs col-lg-3 lista">
 								<h6>Oportunidades</h6>
 								<h6>Nuestra Historia</h6>
 								<h6>API de labCar</h6>
@@ -175,39 +205,43 @@
 								<h6>Laboratoria</h6>
 								<h6>Coders</h6>
 							</div>
-						
-							<div class="col-sm-3 col-xs-6 col-lg-3 logosWeb">
-								<img src="assets/images/appstore.png" alt="#" class="logoWeb1">
-								<img src="assets/images/enBadgeWebGeneric.png" alt="#" class="logoWeb2">
-							</div>
-							/* ICONOS OCULTOS, SÓLO SE DEBEN VER EN XS */
-							<div class="hidden-lg hidden-sm hidden-ls iconos">
+
+							<div class="col-xs-6 visible-xs col-lg-3 iconos">
               	<i class="fa fa-facebook" aria-hidden="true"></i>
                 <i class="fa fa-twitter" aria-hidden="true"></i>
                 <i class="fa fa-linkedin" aria-hidden="true"></i>
                 <i class="fa fa-apple" aria-hidden="true"></i>
                 <i class="fa fa-play" aria-hidden="true"></i>
               </div>
+							
+							<div class="col-xs-6 col-lg-3 text-center logosWeb">
+								<img src="assets/images/appstore.png" alt="#" class="logoWeb1">
+								<img src="assets/images/enBadgeWebGeneric.png" alt="#" class="logoWeb2">
+							</div>
+
 						</div>
 					</div>
 				</div>
 				
 				<div class="row">
-					<div class="col-lg-12 col-xs-12">
+					<div class="col-lg-12 hidden-xs">
 						<p class="copyright">© 2017 LabCar technologies Inc.</p>
 					</div>				
 				</div>
+				<div class="row">
+					<div class="col-xs-6 hidden-lg">
+						<p class="copyright-xs">© 2017 LabCar technologies Inc.</p>
+					</div>				
+				</div>
+
+
 			</div>
-
-
-
-
 
 
 			</div>
 		</footer>
 	
-	</div>
+
 
 	<script src="https://use.fontawesome.com/e93f958285.js"></script>
   <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
